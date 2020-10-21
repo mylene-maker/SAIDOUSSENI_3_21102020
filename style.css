@@ -1,0 +1,98 @@
+body img{
+    object-fit: cover;
+}
+
+@media only screen and (min-width: 321px){
+
+	.position{
+		text-align: center;
+	}
+	.marge{
+		padding: 10px;
+	}
+	.map{
+		display: flex;
+		justify-content: center;
+	}
+	.fond{
+		background-color: #f6f6f6;
+	}
+/* style des boutons de toutes mes pages*/
+
+	.btn{
+		border: 1px solid #9356DC;
+		border-style: hidden;
+		border-radius: 20px;
+		padding: 12px;
+		color: white;
+		background:linear-gradient(#ea72da, #9356dc);
+	}
+	
+/* les propriétés des ma partie sur le fonctionnement du site*/
+
+	.fonctionnement{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		height: 220px;
+		font-weight: bold;
+	}
+	.fonctionnement__style{
+		border: 1px solid #b8b4ab;
+		border-radius: 20px;
+		box-shadow: 2px 2px 2px 2px #dddddd;
+		padding: 15px;
+		background-color: #f6f6f6;
+	}
+	.numero{
+		border: 1px solid black;
+		border-style: hidden;
+		border-radius: 50%;
+		background-color: #9356DC;
+		padding: 8px 12px;
+		color: white;
+		margin-left: -30px;
+	}
+	.fonctionnement img{
+		margin-left: 40px;
+		margin-right: 40px;
+	}
+
+/* les propriétés sur la présentation des cartes*/
+	 
+	a{
+		text-decoration: none;
+		color: black;
+	}
+	.carte{
+		 border: 1px solid rgb(194, 193, 193);
+		 border-radius: 10px; 
+		 border-style: hidden;
+		 width: 78%;
+		 box-shadow: 2px 2px 2px 2px #dddddd;
+		 background-color: white;
+	 }
+	 .carte img{
+		 border-radius: 10px 10px 0px 0px;
+	 }
+	.descritpion{
+		display: flex;
+	}
+
+	
+/* mon pied de page*/
+
+	footer{
+		background-color: #2b2616;
+		color: white;
+		
+	}
+	footer a{
+		text-decoration: none;
+		color: white;
+	}
+	footer li{
+		list-style-type: none;
+	}
+
+}
