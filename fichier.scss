@@ -1,0 +1,143 @@
+$couleurprimaire: #9356dc;
+$couleursecondaire: #ff79da;
+$couleurterciaire: #99e2d0;
+$couleurfond: rgb(250, 250, 242);
+$ombres-box: rgb(187, 179, 179) ;
+
+body{
+    & img{
+        object-fit: cover;
+    }
+    & h3{
+        font-size: 1.5em;
+    }
+
+    & a {
+        color: black;
+        text-decoration: none;
+    }
+}
+.element_central{
+    text-align: center;
+}
+.margeinterieur{
+    padding: 20px;
+}
+header{
+    text-align: center;
+    border-bottom: 2px ridge $ombres-box;
+    padding-bottom: 20px; /* a changer*/
+}
+
+.map{
+    width: 100%;
+    margin-left: 0px;
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(228, 228, 228);
+    & i{
+        margin-right: 15px;
+    }
+}
+
+.presentation{
+    background-color: $couleurfond;
+    margin-top: -15px;
+}
+
+.btn{
+    border: 1px solid white;
+    border-radius: 40px;
+    color: white;
+    background: linear-gradient($couleurprimaire, $couleursecondaire)
+}
+
+.etapes{
+    display: flex;
+    flex-direction: column;
+}
+
+.Fonctionnement{
+    background-color: $couleurfond;
+    margin: 10px;
+    padding-right: 150px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 2px $ombres-box;
+    font-weight: bold;
+    
+    & .numero{
+        border: 1px solid white;
+        border-radius: 50px;
+        background-color: $couleurprimaire;
+        color: white;
+        margin-left: -30px;
+        padding: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+
+    }
+
+    & i{
+        color: gray;
+        margin-top: 5px;
+    }
+    & .titre_bouton{
+        margin-top: 5px;
+
+    }
+}
+
+.restaurants{
+     background-color: $couleurfond; 
+     
+     & .carte{
+         border: 1px solid white;
+         border-radius: 10px;
+         background-color: white;
+         box-shadow: 2px 2px 2px 2px $ombres-box;
+
+     }
+
+     & .carte img{
+         border-radius: 10px 10px 0px 0px;
+         width: 100%;
+     }
+
+   
+}
+
+.carte{
+    & figcaption{
+        margin-top: -20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    & p{
+        margin-top: -20px;
+        grid-column-start: 1;
+    }
+
+    /* superposition de 2 coeurs: 1 grand noire dans lequel j'ai mis un petit
+    blanc à animer au survol*/
+    & .like2{
+        grid-column-start: 2;
+        text-align: right;
+        margin-top: -40px;
+        font-size: 1.9em;
+        padding-right: 30px;
+    }
+
+    & .like1{
+       font-size: 1.6em ;
+       margin-top: -52px;
+       grid-column-start: 2;
+       text-align: right;
+       padding-right: 33px;
+       color: white;
+    }
+}
+
+

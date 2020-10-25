@@ -1,1 +1,161 @@
-/* No CSS *//*# sourceMappingURL=fichier.css.map */
+@charset "UTF-8";
+body img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+body h3 {
+  font-size: 1.5em;
+}
+
+body a {
+  color: black;
+  text-decoration: none;
+}
+
+.element_central {
+  text-align: center;
+}
+
+.margeinterieur {
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  border-bottom: 2px ridge #bbb3b3;
+  padding-bottom: 20px;
+  /* a changer*/
+}
+
+.map {
+  width: 100%;
+  margin-left: 0px;
+  margin-top: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #e4e4e4;
+}
+
+.map i {
+  margin-right: 15px;
+}
+
+.presentation {
+  background-color: #fafaf2;
+  margin-top: -15px;
+}
+
+.btn {
+  border: 1px solid white;
+  border-radius: 40px;
+  color: white;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
+  background: linear-gradient(#9356dc, #ff79da);
+}
+
+.etapes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.Fonctionnement {
+  background-color: #fafaf2;
+  margin: 10px;
+  padding-right: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: 20px;
+  -webkit-box-shadow: 2px 2px 2px 2px #bbb3b3;
+          box-shadow: 2px 2px 2px 2px #bbb3b3;
+  font-weight: bold;
+}
+
+.Fonctionnement .numero {
+  border: 1px solid white;
+  border-radius: 50px;
+  background-color: #9356dc;
+  color: white;
+  margin-left: -30px;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.Fonctionnement i {
+  color: gray;
+  margin-top: 5px;
+}
+
+.Fonctionnement .titre_bouton {
+  margin-top: 5px;
+}
+
+.restaurants {
+  background-color: #fafaf2;
+}
+
+.restaurants .carte {
+  border: 1px solid white;
+  border-radius: 10px;
+  background-color: white;
+  -webkit-box-shadow: 2px 2px 2px 2px #bbb3b3;
+          box-shadow: 2px 2px 2px 2px #bbb3b3;
+}
+
+.restaurants .carte img {
+  border-radius: 10px 10px 0px 0px;
+  width: 100%;
+}
+
+.carte {
+  /* superposition de 2 coeurs: 1 grand noire dans lequel j'ai mis un petit
+    blanc à animer au survol*/
+}
+
+.carte figcaption {
+  margin-top: -20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.carte p {
+  margin-top: -20px;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+}
+
+.carte .like2 {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  text-align: right;
+  margin-top: -40px;
+  font-size: 1.9em;
+  padding-right: 30px;
+}
+
+.carte .like1 {
+  font-size: 1.6em;
+  margin-top: -52px;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  text-align: right;
+  padding-right: 33px;
+  color: white;
+}
+/*# sourceMappingURL=fichier.css.map */
