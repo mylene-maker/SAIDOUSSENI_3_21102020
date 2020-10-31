@@ -1,0 +1,116 @@
+@charset "UTF-8";
+.element_central {
+  text-align: center;
+}
+
+@media (min-width: 320px) {
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 20px;
+    padding-right: 20%;
+  }
+  header img {
+    width: 60%;
+  }
+  header i {
+    font-size: 1rem;
+    margin-top: 8px;
+  }
+  body .illustration {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+  }
+  body a {
+    text-decoration: none;
+  }
+  .contenair_carte {
+    background-color: #f6f6f6;
+    border-radius: 40px 40px 0px 0px;
+    padding: 40px;
+    padding-left: 10px;
+  }
+  .nom-restau {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .nom-restau h2 {
+    font-size: 1.7rem;
+    margin-left: -30px;
+  }
+  .nom-restau i {
+    font-size: 1.5rem;
+    margin-top: 25px;
+  }
+  .choix {
+    border-radius: 20px;
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 5px;
+    padding-left: 10px;
+    -webkit-box-shadow: 2px 5px 5px -2px #dddddd;
+            box-shadow: 2px 5px 5px -2px #dddddd;
+    width: 100%;
+  }
+  .choix .titre-plat {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  .choix .complémentaire {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .choix .info-plat {
+    font-size: 1.05rem;
+    padding-bottom: 20px;
+  }
+  .choix .prix {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-right: 10px;
+  }
+  .btn {
+    width: 50%;
+    border-style: hidden;
+    border-radius: 30px;
+    padding: 15px;
+    margin-left: 30%;
+    margin-top: 40px;
+    color: white;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+    background: linear-gradient(#ff79da, #9356dc);
+  }
+  footer {
+    width: 100%;
+    background-color: #2e2727;
+    color: white;
+  }
+  footer h3 {
+    padding: 40px;
+    margin-bottom: -30px;
+  }
+  footer li {
+    list-style-type: none;
+    line-height: 30px;
+  }
+  footer a {
+    color: white;
+  }
+  footer i {
+    margin-right: 10px;
+  }
+}
+/*# sourceMappingURL=fichier2.css.map */

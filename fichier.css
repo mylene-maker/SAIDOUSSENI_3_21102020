@@ -1,161 +1,170 @@
-@charset "UTF-8";
-body img {
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-body h3 {
-  font-size: 1.5em;
-}
-
-body a {
-  color: black;
-  text-decoration: none;
-}
-
 .element_central {
   text-align: center;
 }
 
-.margeinterieur {
-  padding: 20px;
-}
-
-header {
-  text-align: center;
-  border-bottom: 2px ridge #bbb3b3;
-  padding-bottom: 20px;
-  /* a changer*/
-}
-
-.map {
-  width: 100%;
-  margin-left: 0px;
-  margin-top: 0px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-color: #e4e4e4;
-}
-
-.map i {
-  margin-right: 15px;
-}
-
-.presentation {
-  background-color: #fafaf2;
-  margin-top: -15px;
-}
-
-.btn {
-  border: 1px solid white;
-  border-radius: 40px;
-  color: white;
-  background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
-  background: linear-gradient(#9356dc, #ff79da);
-}
-
-.etapes {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.Fonctionnement {
-  background-color: #fafaf2;
-  margin: 10px;
-  padding-right: 150px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  border-radius: 20px;
-  -webkit-box-shadow: 2px 2px 2px 2px #bbb3b3;
-          box-shadow: 2px 2px 2px 2px #bbb3b3;
-  font-weight: bold;
-}
-
-.Fonctionnement .numero {
-  border: 1px solid white;
-  border-radius: 50px;
-  background-color: #9356dc;
-  color: white;
-  margin-left: -30px;
-  padding: 5px;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-.Fonctionnement i {
-  color: gray;
-  margin-top: 5px;
-}
-
-.Fonctionnement .titre_bouton {
-  margin-top: 5px;
-}
-
-.restaurants {
-  background-color: #fafaf2;
-}
-
-.restaurants .carte {
-  border: 1px solid white;
-  border-radius: 10px;
-  background-color: white;
-  -webkit-box-shadow: 2px 2px 2px 2px #bbb3b3;
-          box-shadow: 2px 2px 2px 2px #bbb3b3;
-}
-
-.restaurants .carte img {
-  border-radius: 10px 10px 0px 0px;
-  width: 100%;
-}
-
-.carte {
-  /* superposition de 2 coeurs: 1 grand noire dans lequel j'ai mis un petit
-    blanc à animer au survol*/
-}
-
-.carte figcaption {
-  margin-top: -20px;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-}
-
-.carte p {
-  margin-top: -20px;
-  -ms-grid-column: 1;
-      grid-column-start: 1;
-}
-
-.carte .like2 {
-  -ms-grid-column: 2;
-      grid-column-start: 2;
-  text-align: right;
-  margin-top: -40px;
-  font-size: 1.9em;
-  padding-right: 30px;
-}
-
-.carte .like1 {
-  font-size: 1.6em;
-  margin-top: -52px;
-  -ms-grid-column: 2;
-      grid-column-start: 2;
-  text-align: right;
-  padding-right: 33px;
-  color: white;
+@media (min-width: 320px) {
+  body {
+    width: 100%;
+    margin: 0px;
+  }
+  body img {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  body a {
+    text-decoration: none;
+    color: black;
+  }
+  body h3 {
+    font-size: 1.5rem;
+  }
+  header img {
+    width: 50%;
+    padding: 20px;
+  }
+  .map {
+    background-color: #dddddd;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: -10px;
+    margin: 0px;
+    padding: 20px;
+    -webkit-box-shadow: inset 0 3px 5px -5px #2c2c2c;
+            box-shadow: inset 0 3px 5px -5px #2c2c2c;
+  }
+  .map i {
+    margin-right: 20px;
+  }
+  .presentation {
+    background-color: #f6f6f6;
+    padding: 20px;
+  }
+  .presentation button {
+    border: 1px solid white;
+    border-radius: 40px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
+    background: linear-gradient(#9356dc, #ff79da);
+    color: white;
+    padding: 20px;
+  }
+  .contenair_fonctionnement {
+    margin-left: 10px;
+  }
+  .etapes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .Fonctionnement {
+    border: 1px solid white;
+    border-radius: 20px;
+    -webkit-box-shadow: 2px 2px 5px 2px #dddddd;
+            box-shadow: 2px 2px 5px 2px #dddddd;
+    background-color: #f6f6f6;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 82%;
+    padding: 20px;
+    margin-left: 10px;
+    margin-bottom: 15px;
+  }
+  .Fonctionnement .numero {
+    border: 1px solid white;
+    border-radius: 50px;
+    background-color: #9356dc;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+    margin-left: -35px;
+    margin-top: -3px;
+  }
+  .Fonctionnement i {
+    color: gray;
+    font-size: 1.2rem;
+    margin-top: 5px;
+  }
+  .Fonctionnement span {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 5px;
+  }
+  .Fonctionnement:hover {
+    background-color: #f2eafb;
+  }
+  .restaurants {
+    background-color: #f6f6f6;
+    padding: 10px;
+  }
+  .carte {
+    width: 95%;
+    margin-left: 20px;
+    -webkit-box-shadow: 2px 2px 5px 2px #dddddd;
+            box-shadow: 2px 2px 5px 2px #dddddd;
+    border-radius: 20px;
+    background-color: white;
+    margin-left: 5px;
+  }
+  .carte img {
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+  }
+  .carte figcaption {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    padding: 10px;
+  }
+  .carte figcaption p {
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+  }
+  .carte figcaption i {
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    font-size: 2rem;
+  }
+  .carte .etiquette {
+    background-color: #99e2d0;
+    width: 30%;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+  }
+  footer {
+    width: 100%;
+    background-color: #2e2727;
+    color: white;
+  }
+  footer h3 {
+    padding: 40px;
+    margin-bottom: -30px;
+  }
+  footer li {
+    list-style-type: none;
+    line-height: 30px;
+  }
+  footer a {
+    color: white;
+  }
+  footer i {
+    margin-right: 10px;
+  }
 }
 /*# sourceMappingURL=fichier.css.map */

@@ -1,0 +1,128 @@
+$couleurprimaire: #9356dc;
+$couleursecondaire: #ff79da;
+$couleurterciaire: #99e2d0;
+$couleurfond: #f6f6f6;
+$ombres-box: #dddddd ;
+$border: 1px solid white;
+
+$breackpoint: 320px;
+$media-mobile: only screen and (min-width: $breackpoint);
+
+.element_central{
+    text-align: center;
+}
+
+@media #{$media-mobile}{
+
+    header{
+        display: flex;
+        justify-content: space-around;
+        padding: 20px;
+        padding-right: 20%;
+
+        img{
+            width: 60%;
+        }
+        i{
+           font-size: 1rem;
+           margin-top: 8px;
+        }
+    }
+
+    body{
+        .illustration{
+            object-fit: cover;
+            width: 100%;
+        }
+        a{
+            text-decoration: none;
+        }
+    }
+
+    .contenair_carte{
+        background-color: $couleurfond;
+        border-radius: 40px 40px 0px 0px;
+        padding: 40px;
+        padding-left: 10px;
+    }
+    .nom-restau{
+        display: flex;
+        justify-content: space-around;
+
+        h2{
+            font-size: 1.7rem;
+            margin-left: -30px;
+        }
+        i{
+            font-size: 1.5rem;
+            margin-top: 25px;
+        }
+    }
+
+    .choix{
+       
+        border-radius: 20px;
+        background-color: white;
+        margin-bottom: 20px;
+        padding: 5px;
+        padding-left: 10px;
+        box-shadow: 2px 5px 5px -2px $ombres-box;
+        width: 100%;
+
+        .titre-plat{
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+        .complémentaire{
+            display: flex;
+            justify-content: space-between;
+        }
+        .info-plat{
+            font-size: 1.05rem;
+            padding-bottom: 20px;
+        }
+        .prix{
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-right: 10px;
+        }
+    }
+
+    
+
+    .btn{
+        width: 50%;
+        border-style: hidden;
+        border-radius: 30px;
+        padding: 15px;
+        margin-left: 30%;
+        margin-top: 40px;
+        color: white;
+        background: linear-gradient($couleursecondaire, $couleurprimaire);
+    }
+
+    footer{
+
+        width: 100%;
+        background-color: rgb(46, 39, 39);
+        color: white;
+
+        h3{
+            padding: 40px;
+            margin-bottom: -30px;
+        }
+    
+        li{
+            list-style-type: none;
+            line-height: 30px;
+        }
+        a{
+            color: white;
+        }
+        i{
+            margin-right: 10px;
+        }
+    }
+}
