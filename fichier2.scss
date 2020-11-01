@@ -5,8 +5,18 @@ $couleurfond: #f6f6f6;
 $ombres-box: #dddddd ;
 $border: 1px solid white;
 
+/* Media query smartphone*/
+
 $breackpoint: 320px;
 $media-mobile: only screen and (min-width: $breackpoint);
+
+/* Media query tablette*/
+$breackpoint-2: 767px;
+$media-tablette: only screen and (min-width: $breackpoint-2);
+
+/* Media query desktop*/
+$breackpoint-3: 1024px;
+$media-desktop: only screen and (min-width: $breackpoint-3);
 
 .element_central{
     text-align: center;
@@ -26,6 +36,7 @@ $media-mobile: only screen and (min-width: $breackpoint);
         i{
            font-size: 1rem;
            margin-top: 8px;
+           color: black;
         }
     }
 
@@ -75,10 +86,12 @@ $media-mobile: only screen and (min-width: $breackpoint);
             margin-top: 10px;
             margin-bottom: 5px;
         }
+        
         .complémentaire{
             display: flex;
             justify-content: space-between;
         }
+
         .info-plat{
             font-size: 1.05rem;
             padding-bottom: 20px;
@@ -88,6 +101,18 @@ $media-mobile: only screen and (min-width: $breackpoint);
             font-size: 1.1rem;
             margin-right: 10px;
         }
+
+        i{
+            color: white;
+            background-color: $couleurterciaire;
+            border-radius: 0px 20px 20px 0px;
+            padding: 30px;
+            margin-top: -35px;
+           margin-right: -5px;
+           
+        }
+
+        
     }
 
     
@@ -124,5 +149,69 @@ $media-mobile: only screen and (min-width: $breackpoint);
         i{
             margin-right: 10px;
         }
+    }
+}
+
+/*Version tablette*/
+
+@media #{$media-tablette}{
+
+    header{
+        i{
+            margin-top: 25px;
+        }
+    }
+    footer{
+        text-align: center;
+
+        h3{
+            margin-left: 30px;
+        }
+    }
+}
+
+/*Version desktop*/
+@media #{$media-desktop}{
+
+    header{
+        width: 40%;
+        justify-content: space-around;
+        margin-left: 25%;
+
+        i{
+            margin-top: 25px;
+        }
+    }
+    main{
+        img{
+            height: 400px;
+        }
+    }
+    .nom-restau{
+       margin-bottom: 40px;
+       justify-content: center;
+        
+       i{
+           margin-left: 10%;
+       }
+    }
+    .carte{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .entrees{
+        width: 30%;
+    }
+    .plats{
+        width: 30%;
+    }
+    .desserts{
+        width: 30%;
+    }
+
+    .btn{
+        margin-left: 27%;
     }
 }

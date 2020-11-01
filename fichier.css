@@ -1,3 +1,6 @@
+/* Media query smarthpone*/
+/* Media query tablette*/
+/* Media query desktop*/
 .element_central {
   text-align: center;
 }
@@ -165,6 +168,80 @@
   }
   footer i {
     margin-right: 10px;
+  }
+}
+
+@media (min-width: 767px) {
+  h3 {
+    text-align: center;
+  }
+  .etapes {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .Fonctionnement {
+    width: 40%;
+    margin-right: 15px;
+  }
+  .onglets_cartes {
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+  }
+  .carte {
+    width: 90%;
+    margin-left: 20px;
+  }
+  .carte1 {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+  }
+  .carte2 {
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+  }
+  footer {
+    text-align: center;
+  }
+  footer h3 {
+    margin-left: 40px;
+  }
+}
+
+/*Version desktop*/
+@media (min-width: 1024px) {
+  .etapes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+  }
+  .Fonctionnement {
+    width: 25%;
   }
 }
 /*# sourceMappingURL=fichier.css.map */

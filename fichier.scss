@@ -6,8 +6,17 @@ $couleurfond: #f6f6f6;
 $ombres-box: #dddddd ;
 $border: 1px solid white;
 
+/* Media query smarthpone*/
 $breackpoint: 320px;
 $media-mobile: only screen and (min-width: $breackpoint);
+
+/* Media query tablette*/
+$breackpoint-2: 767px;
+$media-tablette: only screen and (min-width: $breackpoint-2);
+
+/* Media query desktop*/
+$breackpoint-3: 1024px;
+$media-desktop: only screen and (min-width: $breackpoint-3);
 
 .element_central{
     text-align: center;
@@ -178,5 +187,66 @@ $media-mobile: only screen and (min-width: $breackpoint);
         i{
             margin-right: 10px;
         }
+    }
+}
+
+@media #{$media-tablette}{
+
+
+        h3{
+            text-align: center;
+        }
+    
+    .etapes{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center; 
+    }
+
+    .Fonctionnement{
+        width: 40%;
+        margin-right: 15px;
+    }
+
+    .onglets_cartes{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .carte{
+        width: 90%;
+        margin-left: 20px;
+   }
+    .carte1{
+        grid-column-start: 1;
+    }
+    .carte2{
+        grid-column-start: 2;
+        grid-row-start: 1;
+    }
+
+    footer{
+        text-align: center;
+
+        h3{
+            margin-left: 40px;
+        }
+    }
+}
+
+/*Version desktop*/
+
+@media #{$media-desktop}{
+    .etapes{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .Fonctionnement{
+        width: 25%;
     }
 }
