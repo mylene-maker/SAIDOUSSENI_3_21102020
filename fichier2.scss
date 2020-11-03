@@ -41,12 +41,19 @@ $media-desktop: only screen and (min-width: $breackpoint-3);
     }
 
     body{
+        font-family: 'Roboto', sans-serif;
         .illustration{
             object-fit: cover;
             width: 100%;
         }
         a{
             text-decoration: none;
+        }
+        h3{
+            font-weight: normal;
+            padding-bottom: 10px;
+            box-shadow: inset 0 -5px 0 $couleurterciaire;
+            
         }
     }
 
@@ -55,18 +62,24 @@ $media-desktop: only screen and (min-width: $breackpoint-3);
         border-radius: 40px 40px 0px 0px;
         padding: 40px;
         padding-left: 10px;
+        margin-top: -15%;
+        position: relative;
+        max-width: 100%;
     }
     .nom-restau{
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
+
+        /*font-family: 'Shrikhand', cursive; police titre et logo*/
+
 
         h2{
-            font-size: 1.7rem;
-            margin-left: -30px;
+            font-family: 'Shrikhand', cursive;
         }
         i{
             font-size: 1.5rem;
             margin-top: 25px;
+
         }
     }
 
@@ -78,13 +91,15 @@ $media-desktop: only screen and (min-width: $breackpoint-3);
         padding: 5px;
         padding-left: 10px;
         box-shadow: 2px 5px 5px -2px $ombres-box;
-        width: 100%;
+        width: 105%;
 
         .titre-plat{
             font-weight: bold;
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             margin-top: 10px;
             margin-bottom: 5px;
+            box-shadow: none;
+            padding-bottom: 0px;
         }
         
         .complémentaire{
@@ -102,17 +117,38 @@ $media-desktop: only screen and (min-width: $breackpoint-3);
             margin-right: 10px;
         }
 
-        i{
+        .fa-check-circle{
             color: white;
-            background-color: $couleurterciaire;
-            border-radius: 0px 20px 20px 0px;
-            padding: 30px;
-            margin-top: -35px;
-           margin-right: -5px;
-           
-        }
+            background-color: #99e2d0;
+            font-size: 1.5rem;
+            margin-right: 10px;
+            margin-top: 40%;  
 
-        
+            /*animation du boutton check*/
+            
+            transform: rotate(0deg);
+              transition: 1s ease-in-out;
+          }
+          .fa-check-circle:hover {
+            transform: rotate(360deg);
+          }
+          
+          /*fin de l'animation*/
+          .valid{ 
+            background-color: #99e2d0;
+            padding: 20px;
+            border-radius: 0px 20px 20px 0px;
+            height: auto;
+            margin-top: -40px;
+            margin-right: -5px;
+            margin-top: -42px;
+            margin-bottom: -5px;
+            display: none;
+
+            &:hover{
+                cursor: pointer;
+            }
+            }
     }
 
     
@@ -137,6 +173,8 @@ $media-desktop: only screen and (min-width: $breackpoint-3);
         h3{
             padding: 40px;
             margin-bottom: -30px;
+            box-shadow: none;
+            font-family: 'Shrikhand', cursive;
         }
     
         li{

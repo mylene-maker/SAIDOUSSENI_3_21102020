@@ -141,6 +141,8 @@
   .carte figcaption i {
     -ms-grid-column: 2;
         grid-column-start: 2;
+    margin-top: 30px;
+    margin-left: 60%;
     font-size: 2rem;
   }
   .carte .etiquette {
@@ -158,6 +160,7 @@
   footer h3 {
     padding: 40px;
     margin-bottom: -30px;
+    font-family: 'Shrikhand', cursive;
   }
   footer li {
     list-style-type: none;

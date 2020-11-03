@@ -24,6 +24,9 @@
     margin-top: 8px;
     color: black;
   }
+  body {
+    font-family: 'Roboto', sans-serif;
+  }
   body .illustration {
     -o-object-fit: cover;
        object-fit: cover;
@@ -32,22 +35,32 @@
   body a {
     text-decoration: none;
   }
+  body h3 {
+    font-weight: normal;
+    padding-bottom: 10px;
+    -webkit-box-shadow: inset 0 -5px 0 #99e2d0;
+            box-shadow: inset 0 -5px 0 #99e2d0;
+  }
   .contenair_carte {
     background-color: #f6f6f6;
     border-radius: 40px 40px 0px 0px;
     padding: 40px;
     padding-left: 10px;
+    margin-top: -15%;
+    position: relative;
+    max-width: 100%;
   }
   .nom-restau {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    /*font-family: 'Shrikhand', cursive; police titre et logo*/
   }
   .nom-restau h2 {
-    font-size: 1.7rem;
-    margin-left: -30px;
+    font-family: 'Shrikhand', cursive;
   }
   .nom-restau i {
     font-size: 1.5rem;
@@ -61,13 +74,17 @@
     padding-left: 10px;
     -webkit-box-shadow: 2px 5px 5px -2px #dddddd;
             box-shadow: 2px 5px 5px -2px #dddddd;
-    width: 100%;
+    width: 105%;
+    /*fin de l'animation*/
   }
   .choix .titre-plat {
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     margin-top: 10px;
     margin-bottom: 5px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    padding-bottom: 0px;
   }
   .choix .complémentaire {
     display: -webkit-box;
@@ -86,13 +103,35 @@
     font-size: 1.1rem;
     margin-right: 10px;
   }
-  .choix i {
+  .choix .fa-check-circle {
     color: white;
     background-color: #99e2d0;
+    font-size: 1.5rem;
+    margin-right: 10px;
+    margin-top: 40%;
+    /*animation du boutton check*/
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+  }
+  .choix .fa-check-circle:hover {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  .choix .valid {
+    background-color: #99e2d0;
+    padding: 20px;
     border-radius: 0px 20px 20px 0px;
-    padding: 30px;
-    margin-top: -35px;
+    height: auto;
+    margin-top: -40px;
     margin-right: -5px;
+    margin-top: -42px;
+    margin-bottom: -5px;
+    display: none;
+  }
+  .choix .valid:hover {
+    cursor: pointer;
   }
   .btn {
     width: 50%;
@@ -113,6 +152,9 @@
   footer h3 {
     padding: 40px;
     margin-bottom: -30px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    font-family: 'Shrikhand', cursive;
   }
   footer li {
     list-style-type: none;
