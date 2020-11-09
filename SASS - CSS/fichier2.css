@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* Media query smartphone*/
 /* Media query tablette*/
 /* Media query desktop*/
@@ -55,12 +54,8 @@
     margin-top: 8%;
   }
   section h2 {
-    margin-left: -8%;
+    margin-left: -10%;
     font-family: 'Shrikhand', cursive;
-  }
-  section h3 {
-    font-weight: normal;
-    color: rgba(46, 44, 46, 0.8);
   }
   section .underline {
     width: 40px;
@@ -71,10 +66,9 @@
   }
   section h4 {
     margin-top: 0px;
+    font-family: sans-serif, Arial, Helvetica;
   }
   section h5 {
-    font-weight: normal;
-    color: rgba(46, 44, 46, 0.8);
     margin-bottom: 0px;
   }
   .card {
@@ -103,17 +97,13 @@
   }
   .card .info .price {
     margin-top: 20px;
-    margin-right: 20px;
     font-weight: bold;
   }
   .card i {
-    margin-top: -14px;
-    margin-right: -10px;
+    font-size: 1.5rem;
     color: white;
     background-color: #99e2d0;
-    padding: 25px;
-    border-radius: 0px 15px 15px 0px;
-    height: 40%;
+    padding: 0px;
   }
   .card .fa-check-circle {
     /*animation du boutton check*/
@@ -125,13 +115,15 @@
   .card .fa-check-circle:hover {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
+    cursor: pointer;
   }
+  /*fin de l'animation*/
   .btn {
     width: 50%;
     border-style: hidden;
     border-radius: 30px;
-    padding: 15px;
     margin-left: 20%;
+    padding: 15px;
     margin-bottom: 40px;
     color: white;
     background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
@@ -159,178 +151,6 @@
   footer i {
     margin-right: 10px;
   }
-  /*
-    header{
-        display: flex;
-        justify-content: space-around;
-        padding: 20px;
-        padding-right: 20%;
-
-        img{
-            width: 60%;
-        }
-        i{
-           font-size: 1rem;
-           margin-top: 8px;
-           color: black;
-        }
-    }
-
-    body{
-        font-family: 'Roboto', sans-serif;
-        .illustration{
-            object-fit: cover;
-            width: 100%;
-        }
-        a{
-            text-decoration: none;
-        }
-        h3{
-            font-weight: normal;
-            padding-bottom: 10px;
-           /* box-shadow: inset 0 -5px 0 $couleurterciaire;
-            
-        }
-        .bar{
-            width: 40px;
-            height: 3px;
-            background-color: $couleurterciaire;
-            margin-top: -25px;
-            margin-bottom: 20px;
-        }
-    }
-
-    .contenair_carte{
-        background-color: $couleurfond;
-        border-radius: 40px 40px 0px 0px;
-        padding: 40px;
-        padding-left: 10px;
-        margin-top: -15%;
-        position: relative;
-        max-width: 100%;
-
-    }
-    .nom-restau{
-        display: flex;
-        justify-content: space-between;
-
-        /*font-family: 'Shrikhand', cursive; police titre et logo
-
-
-        h2{
-            font-family: 'Shrikhand', cursive;
-        }
-        i{
-            font-size: 1.5rem;
-            margin-top: 25px;
-
-        }
-    }
-
-    .choix{
-       
-        border-radius: 20px;
-        background-color: white;
-        margin-bottom: 20px;
-        padding: 5px;
-        padding-left: 10px;
-        box-shadow: 2px 5px 5px -2px $ombres-box;
-        width: 105%;
-
-        .titre-plat{
-            font-weight: bold;
-            font-size: 1.1rem;
-            margin-top: 10px;
-            margin-bottom: 5px;
-            box-shadow: none;
-            padding-bottom: 0px;
-        }
-        
-        .complémentaire{
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .info-plat{
-            font-size: 1.05rem;
-            padding-bottom: 20px;
-        }
-        .prix{
-            font-weight: bold;
-            font-size: 1.1rem;
-            margin-right: 10px;
-        }
-
-        .fa-check-circle{
-            color: white;
-            background-color: #99e2d0;
-            font-size: 1.5rem;
-            margin-right: 10px;
-            margin-top: 40%;  
-
-            /*animation du boutton check
-            
-            transform: rotate(0deg);
-              transition: 1s ease-in-out;
-          }
-          .fa-check-circle:hover {
-            transform: rotate(360deg);
-          }
-          
-          /*fin de l'animation
-          .valid{ 
-            background-color: #99e2d0;
-            padding: 20px;
-            border-radius: 0px 20px 20px 0px;
-            height: auto;
-            margin-top: -40px;
-            margin-right: -5px;
-            margin-top: -42px;
-            margin-bottom: -5px;
-
-            &:hover{
-                cursor: pointer;
-            }
-            }
-    }
-
-    
-
-    .btn{
-        width: 50%;
-        border-style: hidden;
-        border-radius: 30px;
-        padding: 15px;
-        margin-left: 30%;
-        margin-top: 40px;
-        color: white;
-        background: linear-gradient($couleursecondaire, $couleurprimaire);
-    }
-
-    footer{
-
-        width: 100%;
-        background-color: rgb(46, 39, 39);
-        color: white;
-
-        h3{
-            padding: 40px;
-            margin-bottom: -30px;
-            box-shadow: none;
-            font-family: 'Shrikhand', cursive;
-        }
-    
-        li{
-            list-style-type: none;
-            line-height: 30px;
-        }
-        a{
-            color: white;
-        }
-        i{
-            margin-right: 10px;
-        }
-    }*/
 }
 
 /*Version tablette*/
