@@ -63,10 +63,24 @@ $media-desktop: only screen and (min-width: $breackpoint-3);
             justify-content: space-around;
 
             i{
-                font-size: 1.3rem;
-                margin-top: 8%;
+                font-size: 1.7rem;
+                margin-top: 20px;
+            }
+            /*superposition d'un coeur a remplir au survol*/
+            .hidden{
+                position: absolute;
+                color: white;
+                font-size: 1.4rem;
+                margin-left: -24.5px; 
+                margin-top: 3px;
+
+                &:hover{
+                    color: lighten($couleurprimaire, 15%);
+                    transition: 0.5s ease-in-out;
+                }
             }
         }
+
         h2{
             margin-left: -10%;
             font-family: 'Shrikhand', cursive;
@@ -98,41 +112,59 @@ $media-desktop: only screen and (min-width: $breackpoint-3);
         box-shadow: 2px 5px 5px -2px $ombres-box;
         margin-bottom: 15px;
         padding: 10px;
-        padding-bottom: 5px;
+        padding-bottom: 10px;
         width: 90%;
         height: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+        &:hover{
+            cursor: pointer;
+        }
+        &:hover .check{
+            display: block;
+        }
        }
+       .title-dish{
+        grid-column-start: 1;
+           grid-column-end: 3;
+       }
+
        .info{
            display: flex;
            justify-content: space-between;
            margin-top: -35px;
-
+           grid-column-start: 1;
+           grid-column-end: 3;
+           
            .price{
                margin-top: 20px;
+               font-family: Arial, Helvetica, sans-serif;
                font-weight: bold;
            }
        }
-       i{
-            font-size: 1.5rem;
+       .check{
+            font-size: 1.3rem;
             color: white;
             background-color: $couleurterciaire;
-            padding: 0px;
-           
+            grid-column-start: 3;
+            grid-row-end: 2;
+            margin: auto;
        }
-       
+
        .fa-check-circle{
          
-        /*animation du boutton check*/
+      /* animation du boutton check*/
         
         transform: rotate(0deg);
           transition: 1s ease-in-out;
       }
       .fa-check-circle:hover {
         transform: rotate(360deg);
-        cursor: pointer;
       }
+      /* fin de l'animation*/
+
     }
-        /*fin de l'animation*/
 
     .btn{
         width: 50%;

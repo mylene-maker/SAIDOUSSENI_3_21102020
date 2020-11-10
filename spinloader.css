@@ -1,19 +1,12 @@
-section{
-  width: 100%;
-  height: 750px;
-  
-}
-
 /*Animation du spinloader*/
 .spinloader{ 
     display: flex; 
-    justify-content: center;
   }
   .spin{ 
     width: 20px;
     margin-left: 8px;
     height: 70px;
-    border: 2px hidden black;
+    border: 2px hidden;
     border-radius: 50px;
     background: linear-gradient(#FF79DA, #9356DC);
     animation: 1s bounce infinite ease-in-out;
@@ -27,10 +20,10 @@ section{
   .round3{ animation-delay: 0s;
   }
   
+  
   @keyframes bounce{ 
     0% {transform: scale(1)}
     40% {transform: scale(1)}
     100%{transform: scale(1)}
     80% { transform: scale(0.2)}
   }
-/*Fin de l'animation du spinloader*/

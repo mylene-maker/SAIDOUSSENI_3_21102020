@@ -48,10 +48,23 @@
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    /*superposition d'un coeur a remplir au survol*/
   }
   section .name-restaurant i {
-    font-size: 1.3rem;
-    margin-top: 8%;
+    font-size: 1.7rem;
+    margin-top: 20px;
+  }
+  section .name-restaurant .hidden {
+    position: absolute;
+    color: white;
+    font-size: 1.4rem;
+    margin-left: -24.5px;
+    margin-top: 3px;
+  }
+  section .name-restaurant .hidden:hover {
+    color: #bc95e9;
+    -webkit-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
   }
   section h2 {
     margin-left: -10%;
@@ -74,6 +87,7 @@
   .card {
     margin-left: 10px;
     margin-bottom: 50px;
+    /* fin de l'animation*/
   }
   .card .box {
     border-radius: 15px;
@@ -82,9 +96,24 @@
             box-shadow: 2px 5px 5px -2px #dddddd;
     margin-bottom: 15px;
     padding: 10px;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
     width: 90%;
     height: auto;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+  .card .box:hover {
+    cursor: pointer;
+  }
+  .card .box:hover .check {
+    display: block;
+  }
+  .card .title-dish {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 3;
   }
   .card .info {
     display: -webkit-box;
@@ -94,19 +123,26 @@
         -ms-flex-pack: justify;
             justify-content: space-between;
     margin-top: -35px;
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 3;
   }
   .card .info .price {
     margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
   }
-  .card i {
-    font-size: 1.5rem;
+  .card .check {
+    font-size: 1.3rem;
     color: white;
     background-color: #99e2d0;
-    padding: 0px;
+    -ms-grid-column: 3;
+        grid-column-start: 3;
+    grid-row-end: 2;
+    margin: auto;
   }
   .card .fa-check-circle {
-    /*animation du boutton check*/
+    /* animation du boutton check*/
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
     -webkit-transition: 1s ease-in-out;
@@ -115,9 +151,7 @@
   .card .fa-check-circle:hover {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
-    cursor: pointer;
   }
-  /*fin de l'animation*/
   .btn {
     width: 50%;
     border-style: hidden;
