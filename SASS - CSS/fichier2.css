@@ -54,20 +54,8 @@
     font-size: 1.7rem;
     margin-top: 20px;
   }
-  section .name-restaurant .hidden {
-    position: absolute;
-    color: white;
-    font-size: 1.4rem;
-    margin-left: -24.5px;
-    margin-top: 3px;
-  }
-  section .name-restaurant .hidden:hover {
-    color: #bc95e9;
-    -webkit-transition: 0.5s ease-in-out;
-    transition: 0.5s ease-in-out;
-  }
   section h2 {
-    margin-left: -10%;
+    margin-left: -5%;
     font-family: 'Shrikhand', cursive;
   }
   section .underline {
@@ -87,7 +75,6 @@
   .card {
     margin-left: 10px;
     margin-bottom: 50px;
-    /* fin de l'animation*/
   }
   .card .box {
     border-radius: 15px;
@@ -140,18 +127,59 @@
         grid-column-start: 3;
     grid-row-end: 2;
     margin: auto;
+    display: none;
+    /* animation apparition check*/
+    -webkit-animation: slide 1s ease-in-out;
+            animation: slide 1s ease-in-out;
   }
   .card .fa-check-circle {
-    /* animation du boutton check*/
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-    -webkit-transition: 1s ease-in-out;
-    transition: 1s ease-in-out;
+    -webkit-animation: turn 1000ms ease-in-out;
+            animation: turn 1000ms ease-in-out;
   }
-  .card .fa-check-circle:hover {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+  @-webkit-keyframes slide {
+    to {
+      -webkit-transform: translateX(-50px);
+              transform: translateX(-50px);
+    }
+    from {
+      -webkit-transform: translateX();
+              transform: translateX();
+    }
+    /* Fin animation apparition check*/
   }
+  @keyframes slide {
+    to {
+      -webkit-transform: translateX(-50px);
+              transform: translateX(-50px);
+    }
+    from {
+      -webkit-transform: translateX();
+              transform: translateX();
+    }
+    /* Fin animation apparition check*/
+  }
+  /* animation rotation check*/
+  @-webkit-keyframes turn {
+    to {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+    }
+    from {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  @keyframes turn {
+    to {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+    }
+    from {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  /* fin animation rotation check*/
   .btn {
     width: 50%;
     border-style: hidden;
