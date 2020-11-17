@@ -213,6 +213,18 @@ $media-desktop: only screen and (min-width: $breackpoint-3);
     }
 }
 
+ /* debut de l'animation du loader dans la page*/
+ body{
+    position: relative;
+    opacity: 1;
+    z-index: 1;
+    .spinloader{
+        position: absolute;
+        z-index: -1;
+        /* loader en arrière plan de la page*/
+        } 
+}
+
 @media #{$media-tablette}{
 
 

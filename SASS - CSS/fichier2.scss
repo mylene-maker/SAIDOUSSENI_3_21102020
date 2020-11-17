@@ -66,9 +66,7 @@ $media-desktop: only screen and (min-width: $breackpoint-3);
             i{
                 font-size: 1.7rem;
                 margin-top: 20px;
-            }
-            /*superposition d'un coeur a remplir au survol*/
-            
+            }    
         }
 
         h2{
@@ -106,7 +104,7 @@ $media-desktop: only screen and (min-width: $breackpoint-3);
         width: 90%;
         height: auto;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr ;
 
         &:hover{
             cursor: pointer;
@@ -117,7 +115,7 @@ $media-desktop: only screen and (min-width: $breackpoint-3);
        }
        .title-dish{
         grid-column-start: 1;
-           grid-column-end: 3;
+        grid-column-end: 3;
        }
 
        .info{
@@ -129,6 +127,7 @@ $media-desktop: only screen and (min-width: $breackpoint-3);
            
            .price{
                margin-top: 20px;
+               margin-right: -110px;
                font-family: Arial, Helvetica, sans-serif;
                font-weight: bold;
            }
@@ -140,11 +139,13 @@ $media-desktop: only screen and (min-width: $breackpoint-3);
             grid-column-start: 3;
             grid-row-end: 2;
             margin: auto;
+            margin-left: 90%; 
             display: none;
-            
+
             /* animation apparition check*/
 
             animation: slide 1s ease-in-out;
+            animation-fill-mode: forwards;
        }
        .fa-check-circle{
            animation: turn 1000ms ease-in-out;
@@ -208,6 +209,32 @@ $media-desktop: only screen and (min-width: $breackpoint-3);
             }
     }
 }
+/*animation de la carte au chargement de la page*/
+.card{
+    animation: cascade 1s ease-in-out;
+    .card__1{
+        animation-delay: 0.1s;
+    }
+    .card__2{
+        animation-delay: 0.5s;
+    }
+    .card__3{
+        animation-delay: 1s;
+    }
+}
+
+@keyframes cascade{
+    from{
+        transform: translateY(4px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+
 /*Version tablette*/
 
 @media #{$media-tablette}{

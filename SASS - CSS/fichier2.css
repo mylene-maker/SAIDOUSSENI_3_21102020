@@ -48,7 +48,6 @@
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    /*superposition d'un coeur a remplir au survol*/
   }
   section .name-restaurant i {
     font-size: 1.7rem;
@@ -116,6 +115,7 @@
   }
   .card .info .price {
     margin-top: 20px;
+    margin-right: -110px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
   }
@@ -127,10 +127,13 @@
         grid-column-start: 3;
     grid-row-end: 2;
     margin: auto;
+    margin-left: 90%;
     display: none;
     /* animation apparition check*/
     -webkit-animation: slide 1s ease-in-out;
             animation: slide 1s ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
   }
   .card .fa-check-circle {
     -webkit-animation: turn 1000ms ease-in-out;
@@ -212,6 +215,53 @@
   }
   footer i {
     margin-right: 10px;
+  }
+}
+
+/*animation de la carte au chargement de la page*/
+.card {
+  -webkit-animation: cascade 1s ease-in-out;
+          animation: cascade 1s ease-in-out;
+}
+
+.card .card__1 {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+
+.card .card__2 {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+.card .card__3 {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+@-webkit-keyframes cascade {
+  from {
+    -webkit-transform: translateY(4px);
+            transform: translateY(4px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes cascade {
+  from {
+    -webkit-transform: translateY(4px);
+            transform: translateY(4px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
   }
 }
 
