@@ -96,6 +96,10 @@
   .card .box:hover .check {
     display: block;
   }
+  .card .box:hover .price {
+    -webkit-animation: slide-price .5s forwards;
+            animation: slide-price .5s forwards;
+  }
   .card .title-dish {
     -ms-grid-column: 1;
         grid-column-start: 1;
@@ -115,9 +119,9 @@
   }
   .card .info .price {
     margin-top: 20px;
-    margin-right: -110px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
+    margin-right: -100px;
   }
   .card .check {
     font-size: 1.3rem;
@@ -127,37 +131,42 @@
         grid-column-start: 3;
     grid-row-end: 2;
     margin: auto;
-    margin-left: 90%;
+    margin-top: -10px;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    border-radius: 0px 15px 15px 0px;
+    height: 100%;
+    padding-top: 23px;
+    padding-bottom: 1px;
+    padding-right: 17px;
+    padding-left: 25px;
     display: none;
-    /* animation apparition check*/
-    -webkit-animation: slide 1s ease-in-out;
-            animation: slide 1s ease-in-out;
+    /*animation apparition check*/
+    -webkit-animation: slide .5s ease-in-out;
+            animation: slide .5s ease-in-out;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
   .card .fa-check-circle {
-    -webkit-animation: turn 1000ms ease-in-out;
-            animation: turn 1000ms ease-in-out;
+    -webkit-animation: turn .5s ease-in-out;
+            animation: turn .5s ease-in-out;
   }
   @-webkit-keyframes slide {
-    to {
-      -webkit-transform: translateX(-50px);
-              transform: translateX(-50px);
-    }
     from {
-      -webkit-transform: translateX();
-              transform: translateX();
+      margin-left: 90%;
+    }
+    to {
+      margin-left: 52%;
     }
     /* Fin animation apparition check*/
   }
   @keyframes slide {
-    to {
-      -webkit-transform: translateX(-50px);
-              transform: translateX(-50px);
-    }
     from {
-      -webkit-transform: translateX();
-              transform: translateX();
+      margin-left: 90%;
+    }
+    to {
+      margin-left: 52%;
     }
     /* Fin animation apparition check*/
   }
@@ -183,6 +192,23 @@
     }
   }
   /* fin animation rotation check*/
+  /* faire glisser le prix vers la gauche pendant l'apparition du check */
+  @-webkit-keyframes slide-price {
+    to {
+      -webkit-transform: translateX(-190%);
+              transform: translateX(-190%);
+    }
+    from {
+    }
+  }
+  @keyframes slide-price {
+    to {
+      -webkit-transform: translateX(-190%);
+              transform: translateX(-190%);
+    }
+    from {
+    }
+  }
   .btn {
     width: 50%;
     border-style: hidden;

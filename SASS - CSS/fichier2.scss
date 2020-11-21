@@ -112,6 +112,9 @@ $media-desktop: only screen and (min-width: $breackpoint-3);
         &:hover .check{
             display: block;
         }
+        &:hover .price{
+            animation: slide-price .5s forwards;
+        }
        }
        .title-dish{
         grid-column-start: 1;
@@ -127,9 +130,9 @@ $media-desktop: only screen and (min-width: $breackpoint-3);
            
            .price{
                margin-top: 20px;
-               margin-right: -110px;
                font-family: Arial, Helvetica, sans-serif;
                font-weight: bold;
+               margin-right: -100px;
            }
        }
        .check{
@@ -139,24 +142,35 @@ $media-desktop: only screen and (min-width: $breackpoint-3);
             grid-column-start: 3;
             grid-row-end: 2;
             margin: auto;
-            margin-left: 90%; 
+            margin-top: -10px;
+            justify-content: flex-end;
+            border-radius: 0px 15px 15px 0px;
+            height: 100%;
+            padding-top: 23px;
+            padding-bottom: 1px;
+            padding-right: 17px;
+            padding-left: 25px;
             display: none;
+            
 
-            /* animation apparition check*/
+            /*animation apparition check*/
 
-            animation: slide 1s ease-in-out;
+            animation: slide .5s ease-in-out;
             animation-fill-mode: forwards;
        }
        .fa-check-circle{
-           animation: turn 1000ms ease-in-out;
+           animation: turn .5s ease-in-out;
        }
     }
+
+
     @keyframes slide{
-        to{
-            transform: translateX(-50px);
-        }
         from{
-            transform: translateX();
+            margin-left: 90%;
+        }
+        to{
+            margin-left: 52%;
+
         }
             /* Fin animation apparition check*/
     }
@@ -171,7 +185,14 @@ $media-desktop: only screen and (min-width: $breackpoint-3);
         }
     }
             /* fin animation rotation check*/
+            /* faire glisser le prix vers la gauche pendant l'apparition du check */
 
+    @keyframes slide-price{
+       to{
+           transform: translateX(-190%)
+       }
+       from{}
+}
 
     .btn{
         width: 50%;
