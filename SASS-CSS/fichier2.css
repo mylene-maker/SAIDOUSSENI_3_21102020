@@ -49,9 +49,30 @@
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
-  section .name-restaurant i {
-    font-size: 1.7rem;
+  section .name-restaurant .like {
+    font-size: 1.9rem;
     margin-top: 20px;
+  }
+  section .name-restaurant .like1 {
+    font-size: 1.7rem;
+    margin-left: -29px;
+    color: #f6f6f6;
+    position: relative;
+  }
+  section .name-restaurant .like1:hover {
+    cursor: pointer;
+    -webkit-animation: like-active .5s ease-in-out forwards;
+            animation: like-active .5s ease-in-out forwards;
+  }
+  @-webkit-keyframes like-active {
+    100% {
+      color: #9356dc;
+    }
+  }
+  @keyframes like-active {
+    100% {
+      color: #9356dc;
+    }
   }
   section h2 {
     margin-left: -5%;
@@ -220,6 +241,10 @@
     background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
     background: linear-gradient(#ff79da, #9356dc);
   }
+  .btn:hover {
+    background: -webkit-gradient(linear, left top, left bottom, from(#ed88e0), to(#a16be0));
+    background: linear-gradient(#ed88e0, #a16be0);
+  }
   footer {
     width: 100%;
     background-color: #2e2727;
@@ -251,13 +276,13 @@
 }
 
 .card .card__1 {
-  -webkit-animation-delay: 0.1s;
-          animation-delay: 0.1s;
+  -webkit-animation-delay: .1s;
+          animation-delay: .1s;
 }
 
 .card .card__2 {
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
 }
 
 .card .card__3 {

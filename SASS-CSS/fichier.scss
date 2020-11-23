@@ -73,15 +73,20 @@ $media-desktop: only screen and (min-width: $breackpoint-3);
     .presentation{
         background-color: $couleurfond;
         padding: 20px;
-
+        position: relative;
         button{
             border: 1px solid white;
             border-radius: 40px;
             background: linear-gradient($couleurprimaire, $couleursecondaire);
             color: white;
             padding: 20px;
+            
+            &:hover{
+                background: linear-gradient(#ed88e0, #a16be0);
+            }
         }
     }
+    
     .contenair_fonctionnement{
         margin-left: 10px;
     }
@@ -101,7 +106,11 @@ $media-desktop: only screen and (min-width: $breackpoint-3);
         padding: 20px;
         margin-left: 10px;
         margin-bottom: 15px;
+        position: relative;
 
+        &:hover{
+            background-image: linear-gradient(to right, rgba(201, 171, 238, 0.2), rgba(147, 86, 220, 0.2))
+        }
 
         .numero{
             border: 1px solid white;
@@ -127,11 +136,6 @@ $media-desktop: only screen and (min-width: $breackpoint-3);
             font-size: 1.2rem;
             margin-top: 5px;
         }
-
-        &:hover{
-            background-color: lighten($couleurprimaire, 35);
-        }
-
     }
 
     .restaurants{
@@ -147,7 +151,7 @@ $media-desktop: only screen and (min-width: $breackpoint-3);
         border-radius: 20px;
         background-color: white;
         margin-left: 5px;
-        
+        position: relative;
 
         img{
             width: 100%;
@@ -169,7 +173,13 @@ $media-desktop: only screen and (min-width: $breackpoint-3);
                 margin-left: 60%;
                 font-size: 2rem;
             }
-            
+            .like{
+                position: relative;
+            }
+            .like1{
+                margin-top: -50px;
+                margin-bottom: 0px;
+            }
         }
      
 
@@ -297,7 +307,7 @@ $media-desktop: only screen and (min-width: $breackpoint-3);
     }
 }
 
-/*Version desktop*/
+/*Version desktop
 
 @media #{$media-desktop}{
     .etapes{
@@ -312,4 +322,4 @@ $media-desktop: only screen and (min-width: $breackpoint-3);
     .etiquette{
         max-width: 10%;
     }
-}
+}*/

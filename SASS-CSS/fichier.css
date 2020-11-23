@@ -53,6 +53,7 @@
   .presentation {
     background-color: #f6f6f6;
     padding: 20px;
+    position: relative;
   }
   .presentation button {
     border: 1px solid white;
@@ -61,6 +62,10 @@
     background: linear-gradient(#9356dc, #ff79da);
     color: white;
     padding: 20px;
+  }
+  .presentation button:hover {
+    background: -webkit-gradient(linear, left top, left bottom, from(#ed88e0), to(#a16be0));
+    background: linear-gradient(#ed88e0, #a16be0);
   }
   .contenair_fonctionnement {
     margin-left: 10px;
@@ -91,6 +96,11 @@
     padding: 20px;
     margin-left: 10px;
     margin-bottom: 15px;
+    position: relative;
+  }
+  .Fonctionnement:hover {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(201, 171, 238, 0.2)), to(rgba(147, 86, 220, 0.2)));
+    background-image: linear-gradient(to right, rgba(201, 171, 238, 0.2), rgba(147, 86, 220, 0.2));
   }
   .Fonctionnement .numero {
     border: 1px solid white;
@@ -114,9 +124,6 @@
     font-size: 1.2rem;
     margin-top: 5px;
   }
-  .Fonctionnement:hover {
-    background-color: #f2eafb;
-  }
   .restaurants {
     background-color: #f6f6f6;
     padding: 10px;
@@ -130,6 +137,7 @@
     border-radius: 20px;
     background-color: white;
     margin-left: 5px;
+    position: relative;
   }
   .carte img {
     width: 100%;
@@ -155,6 +163,13 @@
     margin-top: 25px;
     margin-left: 60%;
     font-size: 2rem;
+  }
+  .carte figcaption .like {
+    position: relative;
+  }
+  .carte figcaption .like1 {
+    margin-top: -50px;
+    margin-bottom: 0px;
   }
   .carte .etiquette {
     background-color: #99e2d0;
@@ -304,26 +319,20 @@
   }
 }
 
-/*Version desktop*/
-@media (min-width: 1024px) {
-  .etapes {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    width: 100%;
-  }
-  .Fonctionnement {
-    width: 25%;
-  }
-  .etiquette {
-    max-width: 10%;
-  }
-}
+/*Version desktop
+
+@media only (min-width: 1024px){
+    .etapes{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .Fonctionnement{
+        width: 25%;
+    }
+    .etiquette{
+        max-width: 10%;
+    }
+}*/
 /*# sourceMappingURL=fichier.css.map */
