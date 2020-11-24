@@ -49,30 +49,28 @@
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
-  section .name-restaurant .like {
-    font-size: 1.9rem;
+  section .name-restaurant .contenair-heart .like {
+    font-size: 1.8rem;
     margin-top: 20px;
+    opacity: .7;
+    z-index: -1;
   }
-  section .name-restaurant .like1 {
-    font-size: 1.7rem;
-    margin-left: -29px;
-    color: #f6f6f6;
+  section .name-restaurant .contenair-heart .like1 {
+    font-size: 1.8rem;
+    margin-left: -30px;
+    color: white;
     position: relative;
+    opacity: 0;
+    z-index: 1;
   }
-  section .name-restaurant .like1:hover {
+  section .name-restaurant .contenair-heart .like1:hover {
+    opacity: 1;
+    color: #b659be;
     cursor: pointer;
-    -webkit-animation: like-active .5s ease-in-out forwards;
-            animation: like-active .5s ease-in-out forwards;
-  }
-  @-webkit-keyframes like-active {
-    100% {
-      color: #9356dc;
-    }
-  }
-  @keyframes like-active {
-    100% {
-      color: #9356dc;
-    }
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    -webkit-transition: .5s;
+    transition: .5s;
   }
   section h2 {
     margin-left: -5%;

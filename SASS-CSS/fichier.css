@@ -102,6 +102,9 @@
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(201, 171, 238, 0.2)), to(rgba(147, 86, 220, 0.2)));
     background-image: linear-gradient(to right, rgba(201, 171, 238, 0.2), rgba(147, 86, 220, 0.2));
   }
+  .Fonctionnement:hover i {
+    color: #9356dc;
+  }
   .Fonctionnement .numero {
     border: 1px solid white;
     border-radius: 50px;
@@ -129,7 +132,7 @@
     padding: 10px;
   }
   .carte {
-    width: 95%;
+    width: 97%;
     height: 290px;
     margin-left: 20px;
     -webkit-box-shadow: 2px 2px 5px 2px #dddddd;
@@ -164,12 +167,18 @@
     margin-left: 60%;
     font-size: 2rem;
   }
-  .carte figcaption .like {
-    position: relative;
+  .carte figcaption .contenair-heart .like {
+    opacity: .8;
   }
-  .carte figcaption .like1 {
-    margin-top: -50px;
-    margin-bottom: 0px;
+  .carte figcaption .contenair-heart .like:hover .like1 {
+    opacity: 1;
+  }
+  .carte figcaption .contenair-heart .like1 {
+    font-size: 1.9rem;
+    margin: auto;
+    margin-left: -31px;
+    color: #b659be;
+    opacity: 0;
   }
   .carte .etiquette {
     background-color: #99e2d0;
