@@ -319,19 +319,19 @@ $media-desktop: only screen and (min-width: $breackpoint-3);
     }
 }
 
-/*Version desktop
+/*Version desktop*/
 
 @media #{$media-desktop}{
+    
     .etapes{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         width: 100%;
+        margin-bottom: 20px;
     }
     .Fonctionnement{
         width: 25%;
-    }
-    .etiquette{
-        max-width: 10%;
-    }
-}*/
+    } 
+     
+}

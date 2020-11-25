@@ -260,17 +260,20 @@ $media-desktop: only screen and (min-width: $breackpoint-3);
     }
 }
 /*animation de la carte au chargement de la page*/
-.card{
+.card__1{
     animation: cascade 1s ease-in-out;
-    .card__1{
-        animation-delay: .1s;
-    }
-    .card__2{
-        animation-delay: .5s;
-    }
-    .card__3{
-        animation-delay: 1s;
-    }
+}
+.card__2{
+    animation: cascade 1s ease-in-out;
+    animation-delay: .4s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+.card__3{
+    animation: cascade 1s ease-in-out;
+    animation-delay: .7s;
+    animation-fill-mode: forwards;
+    opacity: 0;
 }
 
 @keyframes cascade{
@@ -294,6 +297,9 @@ $media-desktop: only screen and (min-width: $breackpoint-3);
             margin-top: 25px;
         }
     }
+    .name-restaurant{
+        padding-top: 40px;
+    }
     footer{
         text-align: center;
 
@@ -304,6 +310,23 @@ $media-desktop: only screen and (min-width: $breackpoint-3);
     .choix{
         max-width: 100%;
     }
+
+    .card{
+      margin-left: 30px;
+    }
+    .btn{
+        margin-left: 25%;
+    }
+
+    @keyframes slide{
+        to{
+            margin-left: 75%;
+        }
+        from{
+            margin-left: 100%;
+        }
+    }
+   
 }
 
 /*Version desktop*/
@@ -323,31 +346,36 @@ $media-desktop: only screen and (min-width: $breackpoint-3);
             height: 400px;
         }
     }
-    .nom-restau{
-       margin-bottom: 40px;
-       justify-content: center;
-        
-       i{
-           margin-left: 10%;
-       }
+    section{
+        margin-top: -70px;
     }
-    .carte{
-        width: 100%;
+    .card{
         display: flex;
         justify-content: space-between;
-    }
-    
-    .entrees{
-        width: 30%;
-    }
-    .plats{
-        width: 30%;
-    }
-    .desserts{
-        width: 30%;
-    }
+        max-width: 100%;
 
+        .card__1{
+            margin-left: -20px;
+            width: 40%;
+        }
+        .card__2, .card__3 {
+            margin-left: 10px;
+            width: 40%;
+        }
+        .box{
+            max-width: 100%;
+        }
+        .price{
+            padding-right: 10px;
+        }
+        
+    }
+  
+   
     .btn{
         margin-left: 27%;
+    }
+    footer{
+        margin-bottom: 0%;
     }
 }
