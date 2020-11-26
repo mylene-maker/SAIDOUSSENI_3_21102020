@@ -55,12 +55,15 @@ $media-desktop: only screen and (min-width: $breackpoint-3);
 
     section{
         background-color: $couleurfond;
-        border-radius: 20px 20px 0px 0px;
+        border-radius: 25px 25px 0px 0px;
         position: relative;
         margin-top: -15%;
+
         .name-restaurant{
             display: flex;
             justify-content: space-around;
+            padding-top: 20px;
+            margin-left: -20px;
 
             .contenair-heart{
                 
@@ -194,7 +197,7 @@ $media-desktop: only screen and (min-width: $breackpoint-3);
             margin-left: 90%;
         }
         to{
-            margin-left: 52%;
+            margin-left: 58%;
 
         }
             /* Fin animation apparition check*/
@@ -249,7 +252,7 @@ $media-desktop: only screen and (min-width: $breackpoint-3);
         
             li{
                 list-style-type: none;
-                line-height: 30px;
+                line-height: 25px;
             }
             a{
                 color: white;
@@ -319,11 +322,12 @@ $media-desktop: only screen and (min-width: $breackpoint-3);
     }
 
     @keyframes slide{
-        to{
-            margin-left: 75%;
-        }
         from{
             margin-left: 100%;
+        }
+        
+        to{
+            margin-left: 75%;
         }
     }
    
@@ -369,6 +373,14 @@ $media-desktop: only screen and (min-width: $breackpoint-3);
             padding-right: 10px;
         }
         
+    }
+    @keyframes slide{
+        from{
+            margin-left: 70%;
+        }
+        to{
+            margin-left: 50%;
+        }
     }
   
    

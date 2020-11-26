@@ -38,7 +38,7 @@
   }
   section {
     background-color: #f6f6f6;
-    border-radius: 20px 20px 0px 0px;
+    border-radius: 25px 25px 0px 0px;
     position: relative;
     margin-top: -15%;
   }
@@ -48,6 +48,8 @@
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    padding-top: 20px;
+    margin-left: -20px;
   }
   section .name-restaurant .contenair-heart .like {
     font-size: 1.8rem;
@@ -176,7 +178,7 @@
       margin-left: 90%;
     }
     to {
-      margin-left: 52%;
+      margin-left: 58%;
     }
     /* Fin animation apparition check*/
   }
@@ -185,7 +187,7 @@
       margin-left: 90%;
     }
     to {
-      margin-left: 52%;
+      margin-left: 58%;
     }
     /* Fin animation apparition check*/
   }
@@ -257,7 +259,7 @@
   }
   footer li {
     list-style-type: none;
-    line-height: 30px;
+    line-height: 25px;
   }
   footer a {
     color: white;
@@ -343,19 +345,19 @@
     margin-left: 25%;
   }
   @-webkit-keyframes slide {
-    to {
-      margin-left: 75%;
-    }
     from {
       margin-left: 100%;
+    }
+    to {
+      margin-left: 75%;
     }
   }
   @keyframes slide {
-    to {
-      margin-left: 75%;
-    }
     from {
       margin-left: 100%;
+    }
+    to {
+      margin-left: 75%;
     }
   }
 }
@@ -399,6 +401,22 @@
   }
   .card .price {
     padding-right: 10px;
+  }
+  @-webkit-keyframes slide {
+    from {
+      margin-left: 70%;
+    }
+    to {
+      margin-left: 50%;
+    }
+  }
+  @keyframes slide {
+    from {
+      margin-left: 70%;
+    }
+    to {
+      margin-left: 50%;
+    }
   }
   .btn {
     margin-left: 27%;

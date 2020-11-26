@@ -69,6 +69,8 @@
   }
   .contenair_fonctionnement {
     margin-left: 10px;
+    margin-top: 70px;
+    margin-bottom: 50px;
   }
   .etapes {
     display: -webkit-box;
@@ -95,7 +97,7 @@
     width: 82%;
     padding: 20px;
     margin-left: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
     position: relative;
   }
   .Fonctionnement:hover {
@@ -120,12 +122,20 @@
     color: gray;
     font-size: 1.2rem;
     margin-top: 5px;
+    margin-left: -20px;
   }
   .Fonctionnement span {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 1.2rem;
     margin-top: 5px;
+    margin-right: 30px;
+  }
+  .Fonctionnement .titre_bouton {
+    margin-right: 55px;
+  }
+  .Fonctionnement .titre_bouton__3 {
+    margin-right: 45px;
   }
   .restaurants {
     background-color: #f6f6f6;
@@ -185,16 +195,18 @@
     width: 30%;
     text-align: center;
     padding: 10px;
-    margin-left: 50%;
+    margin-left: 60%;
     position: absolute;
     color: green;
     font-weight: bold;
     font-family: sans-serif;
+    border-radius: 5px;
   }
   footer {
     width: 100%;
     background-color: #2e2727;
     color: white;
+    padding-bottom: 20px;
   }
   footer h3 {
     padding: 40px;
@@ -203,7 +215,7 @@
   }
   footer li {
     list-style-type: none;
-    line-height: 30px;
+    line-height: 25px;
   }
   footer a {
     color: white;
