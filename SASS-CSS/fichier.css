@@ -122,20 +122,12 @@
     color: gray;
     font-size: 1.2rem;
     margin-top: 5px;
-    margin-left: -20px;
   }
   .Fonctionnement span {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 1.2rem;
     margin-top: 5px;
-    margin-right: 30px;
-  }
-  .Fonctionnement .titre_bouton {
-    margin-right: 55px;
-  }
-  .Fonctionnement .titre_bouton__3 {
-    margin-right: 45px;
   }
   .restaurants {
     background-color: #f6f6f6;
@@ -177,11 +169,18 @@
     margin-left: 60%;
     font-size: 2rem;
   }
+  .carte figcaption .contenair-heart:hover .like1 {
+    opacity: 1;
+    -webkit-transition: .5s;
+    transition: .5s;
+  }
+  .carte figcaption .contenair-heart:hover .like {
+    opacity: 0;
+    -webkit-transition: .5s;
+    transition: .5s;
+  }
   .carte figcaption .contenair-heart .like {
     opacity: .8;
-  }
-  .carte figcaption .contenair-heart .like:hover .like1 {
-    opacity: 1;
   }
   .carte figcaption .contenair-heart .like1 {
     font-size: 1.9rem;

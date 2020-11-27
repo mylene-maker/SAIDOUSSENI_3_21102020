@@ -73,7 +73,6 @@ $media-desktop: only screen and (min-width: $breackpoint-3);
                     margin-top: 20px;
                     opacity: .7;
                     z-index: -1;
-                   
                 } 
                 .like1{
                     font-size: 1.8rem;
@@ -87,8 +86,6 @@ $media-desktop: only screen and (min-width: $breackpoint-3);
                         opacity: 1;
                         color:rgb(182, 89, 190);
                         cursor: pointer;
-                        transform: scaleX(1);
-                        transition: .5s;
                     }
                 }
             }

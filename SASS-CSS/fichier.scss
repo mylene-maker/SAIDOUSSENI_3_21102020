@@ -133,7 +133,6 @@ $media-desktop: only screen and (min-width: $breackpoint-3);
             color: gray;
             font-size: 1.2rem;
             margin-top: 5px;
-            margin-left: -20px;
         }
 
         span{
@@ -141,14 +140,8 @@ $media-desktop: only screen and (min-width: $breackpoint-3);
             font-weight: bold;
             font-size: 1.2rem;
             margin-top: 5px;
-            margin-right: 30px;
         }
-        .titre_bouton{
-            margin-right: 55px;
-        }
-        .titre_bouton__3{
-            margin-right: 45px;
-        }
+        
     }
 
     .restaurants{
@@ -175,7 +168,7 @@ $media-desktop: only screen and (min-width: $breackpoint-3);
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 1fr 1fr;
             padding: 10px;
-
+               
             p{
                 grid-row-start: 2 ;
                 margin-top: -15px;
@@ -187,13 +180,17 @@ $media-desktop: only screen and (min-width: $breackpoint-3);
                 font-size: 2rem;
             }
             .contenair-heart{
+                &:hover .like1{
+                    opacity: 1;
+                    transition: .5s;
+                }
+                &:hover .like{
+                    opacity: 0;
+                    transition: .5s;
+                }
 
                 .like{ 
                     opacity: .8;
-
-                    &:hover .like1{
-                        opacity: 1;
-                    }
                 }
                 .like1{
                     font-size: 1.9rem;

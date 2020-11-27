@@ -69,10 +69,6 @@
     opacity: 1;
     color: #b659be;
     cursor: pointer;
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
-    -webkit-transition: .5s;
-    transition: .5s;
   }
   section h2 {
     margin-left: -5%;
