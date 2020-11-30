@@ -237,11 +237,11 @@
   padding-top: 80%;
   position: absolute;
   background-color: white;
-  -webkit-animation: wait 3s ease-in-out forwards;
-          animation: wait 3s ease-in-out forwards;
+  -webkit-animation: loader 3s ease-in-out forwards;
+          animation: loader 3s ease-in-out forwards;
 }
 
-@-webkit-keyframes wait {
+@-webkit-keyframes loader {
   0% {
     opacity: 1;
   }
@@ -250,7 +250,7 @@
   }
 }
 
-@keyframes wait {
+@keyframes loader {
   0% {
     opacity: 1;
   }
