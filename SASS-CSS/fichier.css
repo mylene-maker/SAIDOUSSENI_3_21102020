@@ -9,7 +9,7 @@
   body {
     width: 100%;
     margin: 0px;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
   }
   body img {
     -o-object-fit: cover;
@@ -171,16 +171,16 @@
   }
   .carte figcaption .contenair-heart:hover .like1 {
     opacity: 1;
-    -webkit-transition: .5s;
-    transition: .5s;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
   }
   .carte figcaption .contenair-heart:hover .like {
     opacity: 0;
-    -webkit-transition: .5s;
-    transition: .5s;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
   }
   .carte figcaption .contenair-heart .like {
-    opacity: .8;
+    opacity: 0.8;
   }
   .carte figcaption .contenair-heart .like1 {
     font-size: 1.9rem;
@@ -210,7 +210,7 @@
   footer h3 {
     padding: 40px;
     margin-bottom: -30px;
-    font-family: 'Shrikhand', cursive;
+    font-family: "Shrikhand", cursive;
   }
   footer li {
     list-style-type: none;
@@ -261,8 +261,8 @@
 
 /* retarde l'affichage de la page */
 .page {
-  -webkit-animation: home .5s backwards;
-          animation: home .5s backwards;
+  -webkit-animation: home 0.5s backwards;
+          animation: home 0.5s backwards;
   -webkit-animation-delay: 2.5s;
           animation-delay: 2.5s;
 }
