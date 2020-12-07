@@ -253,8 +253,8 @@ $media-desktop: only screen and
   display: flex;
   justify-content: center;
   width: 100%;
-  height: 100%;
-  padding-top: 80%;
+  height: 120h;
+  padding-top: 120%;
   position: absolute;
   background-color: white;
   animation: loader 3s ease-in-out forwards;
@@ -326,6 +326,9 @@ $media-desktop: only screen and
       margin-left: 40px;
     }
   }
+  .spinloader{
+    padding-top: 70%;
+  }
 }
 
 /*Version desktop*/
@@ -340,5 +343,8 @@ $media-desktop: only screen and
   }
   .Fonctionnement {
     width: 25%;
+  }
+  .spinloader{
+    padding-top: 50%;
   }
 }
