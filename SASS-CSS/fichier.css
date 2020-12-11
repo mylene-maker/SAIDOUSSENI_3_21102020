@@ -62,12 +62,14 @@
     background: linear-gradient(#9356dc, #ff79da);
     color: white;
     padding: 20px;
+    -webkit-box-shadow: 2px 2px 5px 2px #dddddd;
+            box-shadow: 2px 2px 5px 2px #dddddd;
   }
   .presentation button:hover {
     background: -webkit-gradient(linear, left top, left bottom, from(#ed88e0), to(#a16be0));
     background: linear-gradient(#ed88e0, #a16be0);
-    -webkit-box-shadow: 1px 1px 1px 1px rgba(85, 78, 78, 0.4);
-            box-shadow: 1px 1px 1px 1px rgba(85, 78, 78, 0.4);
+    -webkit-box-shadow: 2px 2px 5px 2px rgba(85, 78, 78, 0.4);
+            box-shadow: 2px 2px 5px 2px rgba(85, 78, 78, 0.4);
   }
   .contenair_fonctionnement {
     margin-left: 10px;

@@ -84,10 +84,11 @@ $media-desktop: only screen and
       background: linear-gradient($couleurprimaire, $couleursecondaire);
       color: white;
       padding: 20px;
+      box-shadow: 2px 2px 5px 2px $ombres-box;
 
       &:hover {
         background: linear-gradient(#ed88e0, #a16be0);
-      box-shadow: 1px 1px 1px 1px rgba(85, 78, 78, 0.4);
+      box-shadow: 2px 2px 5px 2px rgba(85, 78, 78, 0.4);
       }
     }
   }
