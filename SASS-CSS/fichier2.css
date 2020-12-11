@@ -245,6 +245,8 @@
   .btn:hover {
     background: -webkit-gradient(linear, left top, left bottom, from(#ed88e0), to(#a16be0));
     background: linear-gradient(#ed88e0, #a16be0);
+    -webkit-box-shadow: 1px 1px 1px 1px rgba(85, 78, 78, 0.4);
+            box-shadow: 1px 1px 1px 1px rgba(85, 78, 78, 0.4);
   }
   footer {
     width: 100%;
@@ -406,18 +408,18 @@
   }
   @-webkit-keyframes slide {
     from {
-      margin-left: 70%;
+      margin-left: 80%;
     }
     to {
-      margin-left: 50%;
+      margin-left: 68%;
     }
   }
   @keyframes slide {
     from {
-      margin-left: 70%;
+      margin-left: 80%;
     }
     to {
-      margin-left: 50%;
+      margin-left: 68%;
     }
   }
   .btn {

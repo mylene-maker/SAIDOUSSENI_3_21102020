@@ -79,7 +79,7 @@ $media-desktop: only screen and
     padding: 20px;
     position: relative;
     button {
-      border: 1px solid white;
+      border: 1px hidden white;
       border-radius: 40px;
       background: linear-gradient($couleurprimaire, $couleursecondaire);
       color: white;
@@ -87,6 +87,7 @@ $media-desktop: only screen and
 
       &:hover {
         background: linear-gradient(#ed88e0, #a16be0);
+      box-shadow: 1px 1px 1px 1px rgba(85, 78, 78, 0.4);
       }
     }
   }
